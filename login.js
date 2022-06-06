@@ -38,7 +38,7 @@ function entrar(){
         }
     })
 
-    if(usuario.value == userValid.user && senha.value == userValid.senha){
+    if(usuario.value != '' && usuario.value == userValid.user && senha.value != '' && senha.value == userValid.senha){
         window.location.href = 'home.html'
 
         let mathRandom = Math.random().toString(16).substr(2)
